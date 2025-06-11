@@ -1,3 +1,4 @@
+"use client";
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
@@ -83,7 +84,7 @@ export default function SOSPage() {
   return (
     <main>
       <Header />
-      
+
       {/* Hero Section */}
       <section className="bb-gradient text-white py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -92,7 +93,7 @@ export default function SOSPage() {
               SOS & Roadside Assistance
             </h1>
             <p className="text-xl text-gray-200 mb-8">
-              24/7 emergency support when you need it most. We've got your back on every ride.
+              24/7 emergency support when you need it most. We&apos;ve got your back on every ride.
             </p>
           </div>
         </div>
@@ -153,7 +154,7 @@ export default function SOSPage() {
                       </div>
                     </div>
                   </div>
-                  
+
                   <div className="mb-6">
                     <h4 className="font-semibold text-gray-700 mb-2">Services:</h4>
                     <ul className="text-sm text-gray-600 space-y-1">
@@ -162,8 +163,8 @@ export default function SOSPage() {
                       ))}
                     </ul>
                   </div>
-                  
-                  <Button 
+
+                  <Button
                     className={`w-full ${contact.primary ? 'bb-gold-gradient text-white' : 'bg-gray-600 hover:bg-gray-700 text-white'}`}
                     onClick={() => window.open(`tel:${contact.number}`)}
                   >
@@ -214,7 +215,7 @@ export default function SOSPage() {
                       ))}
                     </ul>
                   </div>
-                  
+
                   <div className="p-3 bg-yellow-50 rounded-lg border border-yellow-200">
                     <p className="text-sm text-yellow-800">
                       <strong>When to call:</strong> {item.whenToCall}
@@ -243,35 +244,35 @@ export default function SOSPage() {
                 Move your bike to the side of the road, turn on hazard lights, and wear reflective gear if available.
               </p>
             </div>
-            
+
             <div className="bg-green-50 p-6 rounded-lg">
               <h3 className="font-semibold text-green-900 mb-2">Share Location</h3>
               <p className="text-green-800 text-sm">
                 Always share your exact location when calling for help. Use GPS coordinates if possible.
               </p>
             </div>
-            
+
             <div className="bg-purple-50 p-6 rounded-lg">
               <h3 className="font-semibold text-purple-900 mb-2">Stay Calm</h3>
               <p className="text-purple-800 text-sm">
                 Keep calm, assess the situation, and don't attempt repairs you're not confident about.
               </p>
             </div>
-            
+
             <div className="bg-orange-50 p-6 rounded-lg">
               <h3 className="font-semibold text-orange-900 mb-2">Emergency Kit</h3>
               <p className="text-orange-800 text-sm">
                 Carry basic tools, first aid kit, flashlight, and emergency contact numbers.
               </p>
             </div>
-            
+
             <div className="bg-red-50 p-6 rounded-lg">
               <h3 className="font-semibold text-red-900 mb-2">Weather Awareness</h3>
               <p className="text-red-800 text-sm">
                 In bad weather, prioritize safety over speed. Seek shelter if conditions are dangerous.
               </p>
             </div>
-            
+
             <div className="bg-gray-50 p-6 rounded-lg">
               <h3 className="font-semibold text-gray-900 mb-2">Communication</h3>
               <p className="text-gray-800 text-sm">
